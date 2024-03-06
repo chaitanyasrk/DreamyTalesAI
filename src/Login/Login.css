@@ -1,0 +1,67 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #fce38a, #f38181, #95e1d3);
+  background-size: 400% 400%;
+  animation: dreamBackground 10s ease infinite;
+}
+
+@keyframes dreamBackground {
+  0% {
+    background-position: 0% 50%; /* Start position */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle position */
+  }
+  100% {
+    background-position: 0% 50%; /* End position */
+  }
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Add smooth transition on hover */
+  flex-direction: column;
+  display: flex;
+  width: 25rem;
+}
+
+.login-form:hover {
+  transform: scale(1.05); /* Scale up the form on hover */
+}
+
+h2 {
+  color: #ff69b4; /* Pink title color */
+  text-align: center;
+}
+
+input[type="text"],
+input[type="textArea"],
+input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff69b4; /* Pink button color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add smooth transition on hover */
+}
+
+button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}

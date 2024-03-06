@@ -1,0 +1,20 @@
+.hobbies-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f8f8f8;
+}
+
+.hobbies-form {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Hobbies-input {
+    width: 20rem;
+    border-radius: 20px;
+}
