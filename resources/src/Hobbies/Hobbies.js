@@ -6,8 +6,31 @@ const Hobbies = () => {
   const [generatedStory, setGeneratedStory] = useState('');
 
   const generateStory = () => {
-    const story = "Once upon a time, there was a brave little dragon who loved to explore new places!";
-    setGeneratedStory(story);
+    const url = "http://127.0.0.1:8000/talesapi/story/"; // Adjust this URL if your API is hosted elsewhere
+    const request = {
+      "kid_name" : "Arjun",
+      "location" : "Bangalore, India",
+      "age": 7,
+      "hobbies" : hobby.split(',')
+    };
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(request)
+      })
+      .then(response => response.json())
+      .then(data => {
+          // Assuming the story is returned under the 'story' key in the response
+          const story = data.story;
+          console.log('Received story:', story);
+          setGeneratedStory(story);
+      })
+      .catch(error => {
+          console.error('Error fetching story:', error);
+      });
   };
 
   return (
