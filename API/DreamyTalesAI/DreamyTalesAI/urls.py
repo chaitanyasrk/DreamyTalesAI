@@ -21,7 +21,6 @@ from talesapi import zabi
 
 urlpatterns = [
     path("talesapi/", include("talesapi.urls")),
-    path("zabi/", include("zabi.urls")),
     path('admin/', admin.site.urls),
 ]
 

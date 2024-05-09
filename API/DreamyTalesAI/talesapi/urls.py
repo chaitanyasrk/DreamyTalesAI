@@ -4,5 +4,5 @@ from .views import StoryAPIView
 from . import views
 
 urlpatterns = [
-    path('story/', views.index, name="story_api"),
+    path('story/', StoryAPIView.as_view(), name='story_api'),
 ]
