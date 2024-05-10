@@ -124,4 +124,5 @@ Follow these steps to get your development environment set up:
    ```
 ## Contact
 
-(https://www.linkedin.com/in/chaitanya-srk/)
+Chaitanya: (https://www.linkedin.com/in/chaitanya-srk/)
+Zabir: (https://www.linkedin.com/in/shaik-zabirullah-763b32220/)
